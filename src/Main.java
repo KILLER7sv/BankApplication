@@ -41,5 +41,28 @@ public class Main {
         System.out.println(p1.CalculateInterest(x));
         System.out.println(p2.CalculateInterest(x));
 
+
+        // SBI
+
+        SBI s1 = new SBI("Sarthak" , "abc123" , 2000);
+        System.out.println("Congrats ! " + s1.getName() +
+                " Your account has been created with account number "
+                + s1.getAccountN0());
+
+        // add money
+
+        System.out.println("New Balance : "+s1.AddMoney(20000));
+
+        // withdraw money
+
+        System.out.println(s1.WithdrawMoney("abc123" , 1200));
+
+        // fetch balance
+        System.out.println(s1.FetchBalance("abc123"));
+
+        // interest
+
+        int y = sc.nextInt();
+        System.out.println(s1.CalculateInterest(y));
     }
 }
